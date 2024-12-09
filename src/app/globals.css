@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.boxes {
+  display: flex
+;
+  column-gap: 20px;
+}
+.box1 img {
+  display: block;
+  text-align: center;
+  float: initial;
+  margin: 0 auto;
+}
+.box1 {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+h2.head {
+  font-size: 20px;
+  color: purple;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+p.para {
+  width: 107%;
+}
+.unique {
+  display: flex;
+  margin-top: 90px;
+}
+h1.trend {
+  font-size: 34px;
+  color: blue;
+  font-weight: bold;
+  margin-bottom: 21px;
+  margin-top: 50px;
+}
+button.cart {
+  background-color: #d54760;
+  padding: 9px 25px;
+  margin-top: 29px;
+}
+h1.text-3xl.font-bold.text-center {
+  color: blue;
+}
+h3.data {
+  text-align: center;
+  margin-top: 16px;
+}
+p.price {
+  text-align: center;
+  font-size: 13px;
+}
